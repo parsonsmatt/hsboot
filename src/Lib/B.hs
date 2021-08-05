@@ -7,7 +7,7 @@ import Data.Aeson
 import GHC.Generics
 
 data B = B A
-    deriving (Generic, ToJSON)
+    deriving (Eq, Show, Generic, ToJSON)
 
 b :: B
 b = B a

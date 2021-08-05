@@ -2,5 +2,8 @@ module Lib
     ( someFunc
     ) where
 
+import Lib.A
+import Data.Aeson
+
 someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+someFunc = print $ toJSON a

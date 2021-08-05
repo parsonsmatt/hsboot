@@ -7,7 +7,7 @@ import GHC.Generics
 import {-# SOURCE #-} Lib.B
 
 data A = A B
-    deriving (Generic, ToJSON)
+    deriving (Eq, Show, Generic, ToJSON)
 
 a :: A
 a = A b
